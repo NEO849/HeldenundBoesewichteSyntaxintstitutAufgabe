@@ -5,16 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.heldenundboesewichtesyntaxintstitutaufgabe.R
+import com.example.heldenundboesewichtesyntaxintstitutaufgabe.databinding.FragmentHereosBinding
 
 class HereosFragment : Fragment() {
+
+    private lateinit var binding: FragmentHereosBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hereos, container, false)
+        binding = FragmentHereosBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
 }
