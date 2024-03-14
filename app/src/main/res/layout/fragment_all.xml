@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/hereos_itemCV"
+    android:id="@+id/all_itemCV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:cardCornerRadius="8dp"
@@ -55,10 +55,10 @@
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/itemsCV"
+            android:id="@+id/allCharactersRV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/carbon_black"
+            android:background="@color/dark_blue"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     </LinearLayout>
