@@ -11,5 +11,7 @@
 
     <string name="charakterStatus">Zeigt das Bild ob es ein Held oder Bösewicht ist</string>
 
+    <string name="characterDesicion">Welchen Charakter möchtest du dir anzeigen lassen?</string>
+
 
 </resources>
