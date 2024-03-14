@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/allFragment">
 
+    <fragment
+        android:id="@+id/allFragment"
+        android:name="com.example.heldenundboesewichtesyntaxintstitutaufgabe.ui.AllFragment"
+        android:label="fragment_all"
+        tools:layout="@layout/fragment_all" >
+        <action
+            android:id="@+id/action_allFragment_to_hereosFragment"
+            app:destination="@id/hereosFragment" />
+        <action
+            android:id="@+id/action_allFragment_to_villainsFragment"
+            app:destination="@id/villainsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hereosFragment"
+        android:name="com.example.heldenundboesewichtesyntaxintstitutaufgabe.ui.HereosFragment"
+        android:label="fragment_hereos"
+        tools:layout="@layout/fragment_hereos" />
+    <fragment
+        android:id="@+id/villainsFragment"
+        android:name="com.example.heldenundboesewichtesyntaxintstitutaufgabe.ui.VillainsFragment"
+        android:label="fragment_villains"
+        tools:layout="@layout/fragment_villains" />
 </navigation>
