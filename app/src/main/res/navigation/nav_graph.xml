@@ -23,15 +23,36 @@
         android:id="@+id/allFragment"
         android:name="com.example.heldenundboesewichtesyntaxintstitutaufgabe.ui.AllFragment"
         android:label="AllFragment"
-        tool:layout="@layout/fragment_all"/>
+        tool:layout="@layout/fragment_all">
+        <action
+            android:id="@+id/action_allFragment_to_hereosFragment"
+            app:destination="@id/hereosFragment" />
+        <action
+            android:id="@+id/action_allFragment_to_villainsFragment"
+            app:destination="@id/villainsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/hereosFragment"
         android:name="com.example.heldenundboesewichtesyntaxintstitutaufgabe.ui.HereosFragment"
         android:label="HereosFragment"
-        tool:layout="@layout/fragment_hereos"/>
+        tool:layout="@layout/fragment_hereos">
+        <action
+            android:id="@+id/action_hereosFragment_to_allFragment"
+            app:destination="@id/allFragment" />
+        <action
+            android:id="@+id/action_hereosFragment_to_villainsFragment"
+            app:destination="@id/villainsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/villainsFragment"
         android:name="com.example.heldenundboesewichtesyntaxintstitutaufgabe.ui.VillainsFragment"
         android:label="VillainsFragment"
-        tool:layout="@layout/fragment_villains"/>
+        tool:layout="@layout/fragment_villains">
+        <action
+            android:id="@+id/action_villainsFragment_to_allFragment"
+            app:destination="@id/allFragment" />
+        <action
+            android:id="@+id/action_villainsFragment_to_hereosFragment"
+            app:destination="@id/hereosFragment" />
+    </fragment>
 </navigation>
